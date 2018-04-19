@@ -10,7 +10,7 @@ namespace Maximum_Arrays
     {
         static void Main(string[] args)
         {
-            int[] myarray = new int[3] { 10, 5, 6 };
+            int[] myarray = new int[3] { 010, 5,2  };
             int maxFromArray = MaxArray(myarray);
             Console.WriteLine(maxFromArray);
             
