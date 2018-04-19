@@ -10,22 +10,25 @@ namespace SortingAlgorithm
     {
         static void Main(string[] args)
         {
-            int[] MyArray = new int[2] { 5,4 };
-            int[] sortArray = GetArraySort(MyArray);
+            int[] mustSort = new int[2] { 5,4 };
+            int[] sortArray = GetArraySort(mustSort);
 
-            Console.WriteLine(sortArray[1]);
+            
            
         }
     private static int[] GetArraySort(int[] arrayInput)
         {
-            int[] arrayCache = new int[arrayInput.Length];
+            int[] array1 = arrayInput;
+            int[] array2 = new int[arrayInput.Length];
+            int[] array3 = new int[arrayInput.Length];
+            int[] array4 = new int[arrayInput.Length];
 
-            for(int i = 0; i < arrayInput[i]; i++)
-            {
-                if (arrayInput[i] < arrayCache[i])
-                    arrayInput = arrayCache;
-            }
-            return arrayCache;
+            if (array1.Max > array2.Min)
+                return array1;
+
+
+            
+
         }
     }
 }
